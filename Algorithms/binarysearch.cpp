@@ -7,7 +7,7 @@ int binarysearch(vector<int>vec, int size, int target)
 int st=0, end=size-1;
 while(st<=end)
 {
-    int mid=(st+end)/2;
+    int mid= (st +(end-st)/2);
     if(target<vec[mid])
     {
         end=mid-1;
